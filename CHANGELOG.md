@@ -4,6 +4,10 @@ We try to follow [http://keepachangelog.com/](http://keepachangelog.com/) recomm
 ## [Unreleased]
 _(add items here for easier creation of next log entry)_
 
+## [1.9.0] - 2019-08-12
+### Added
+- Add onSelect prop to items to override default state
+
 ## [1.8.1] - 2018-02-11
 ### Fixed
 - Prevent menu from closing prematurely on mobile (#308)
