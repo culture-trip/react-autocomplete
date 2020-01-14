@@ -110,7 +110,14 @@ var Autocomplete = function (_React$Component) {
       if (this.isOpen() && this.state.highlightedIndex !== null) {
         var itemNode = this.refs['item-' + this.state.highlightedIndex];
         var menuNode = this.refs.menu;
-        scrollIntoView(findDOMNode(itemNode), findDOMNode(menuNode), { onlyScrollIfNeeded: true });
+        if (itemNode && menuNode) {
+          scrollIntoView(findDOMNode(itemNode), findDOMNode(menuNode), { onlyScrollIfNeeded: true });
+        }
+        if (!itemNode) {
+          this.setState({
+            highlightedIndex: null
+          });
+        }
       }
     }
   }, {
