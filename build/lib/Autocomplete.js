@@ -635,7 +635,7 @@ Autocomplete.keyDownHandlers = {
         return _extends({
           isOpen: false,
           highlightedIndex: null
-        }, _this7.props.onSelect(value, item, prevState));
+        }, _this7.props.onSelect(value, item, prevState, true));
       }, function () {
         //this.refs.input.focus() // TODO: file issue
         _this7.refs.input.setSelectionRange(value.length, value.length);
